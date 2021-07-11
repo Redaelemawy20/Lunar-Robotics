@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lunar Robotics</title>
+    <link rel="icon" href="images/logo.jpg" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <nav class="nav collapsible">
+      <a aria-label="" class="nav__brand" href="index.html"
+        ><img src="images/logo.jpg" alt=""
+      /></a>
+      <svg class="icon icon--nav nav__toggler">
+        <use href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item">
+          <a href="">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="/pricing.html">Pricing</a>
+        </li>
+        <li class="nav__item">
+          <a href="/dashboard.html">dashboard</a>
+        </li>
+        <li class="nav__item">
+          <a href="./about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header block--skewed-right hero">
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="images/vids.mp4" type="video/mp4" />
+          Your browser is not supported!
+        </video>
+      </div>
+      <section class="block block__hero">
+        <div class="container grid grid--1x2">
+          <header class="hero__content">
+            <h1 class="block__heading block__heading--primary">Lander5</h1>
+            <h3 class="block__heading block__heading--secondary">
+              Lunar Robotics
+            </h3>
+            <p class="hero__tagline">Comfortable environment built for you.</p>
+            <a class="btn btn--primary btn--stretched" href="/pricing.html"
+              >Get Started</a
+            >
+          </header>
+          <div class="block__main">
+            <p class="p--animated">
+              BOLDLY GO WHERE NO ROBOT HAS GONE BEFORE
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="block container block-domain">
+      <h2>Lunar Robotics</h2>
+      <p>
+        Boldly go where no Robot has gone before We build the world’s best robot
+        development platforms. Developing autonomous robots has never been
+        easier.
+      </p>
+    </section>
+
+    <div class="container">
+      <div class="callout callout--primary">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready to Get Started?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+              voluptate tempora qui distinctio consequatur aliquid pariatur
+              cupiditate quas cum fugit.
+            </p>
+          </div>
+          <a target="_blank" class="btn btn--secondary btn--stretched"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer class="block block--dark footer">
+      <div class="footer__brand">
+        <img src="images/logo.jpg" alt="" />
+        <p class="footer__copyright">Copyright 2021 Reda Elemawy</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

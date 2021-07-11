@@ -1,0 +1,157 @@
+body {
+  position: relative;
+}
+.side-bar {
+  padding: 2rem;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00d9ff;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: width 0.5s ease-out;
+}
+.side-bar--closed {
+  width: 0;
+  display: none;
+}
+.list_item {
+  padding: 1rem 3rem;
+}
+.dashboard {
+  width: 80%;
+  transition: transform 1s ease-out;
+  margin-left: 20vw;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.animate {
+  transform: translateX(-10vw);
+}
+.container {
+  text-align: center;
+}
+. .dashboard__header {
+  width: 90%;
+}
+.open {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  z-index: 100;
+  transition: opacity 1s ease-out;
+}
+.close {
+  position: absolute;
+  top: 0;
+}
+.list_item {
+  color: #fff;
+  cursor: pointer;
+}
+.list_item--active {
+  border-bottom: 1px solid red;
+}
+.product {
+  display: flex;
+  justify-content: center;
+}
+
+.product__name {
+  font-size: 3rem;
+  padding: 2rem 4rem;
+  margin-right: 40px;
+}
+.product__price {
+  padding: 2rem 4rem;
+}
+.product__price span {
+  font-size: 3rem;
+}
+.heading {
+  font-size: 3rem;
+}
+
+.testimonial-container {
+  background-color: #476ce4;
+  color: #fff;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 20px 40px;
+  max-width: 400px;
+  position: relative;
+}
+
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+
+.user .username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: #fff;
+  height: 4px;
+  width: 100%;
+  animation: grow 10s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .side-bar {
+    width: 100%;
+  }
+
+  . .product {
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .product__name {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .product__price span {
+    font-size: 2rem;
+  }
+  .testimonial-container {
+    padding: 20px 30px;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lunar Robotics - About</title>
+    <link rel="icon" href="images/logo.jpg" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <nav class="nav collapsible">
+      <a aria-label="" class="nav__brand" href="index.html"
+        ><img src="images/logo.jpg" alt=""
+      /></a>
+      <svg class="icon icon--nav nav__toggler">
+        <use href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="/pricing.html">Pricing</a>
+        </li>
+        <li class="nav__item">
+          <a href="/dashboard.html">dashboard</a>
+        </li>
+        <li class="nav__item">
+          <a href="./about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="block block__testimonials" data-aos="zoom-in">
+      <header class="block__header">
+        <h2>What our Customers are Saying</h2>
+        <p>Join us and be a part of maney happy peaople.</p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2 grid-testimonial">
+            <div class="testimonial__image">
+              <div
+                class="img"
+                style="background-image: url('images/testimonial.jpg');"
+                alt="A happy, smiling customer"
+              ></div>
+              <div
+                class="img"
+                style="background-image: url('images/testimonial1.jpg');"
+                alt="A happy, smiling customer"
+              ></div>
+              <div
+                class="img"
+                style="background-image: url('images/testimonial2.jpg');"
+                alt="A happy, smiling customer"
+              ></div>
+              <div
+                class="img"
+                style="background-image: url('images/testimonial3.jpg');"
+                alt="A happy, smiling customer"
+              ></div>
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text"></p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author"></h3>
+                    <p class="quote__organization"></p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="block block--dark footer">
+      <div class="footer__brand">
+        <img src="images/logo.jpg" alt="" />
+        <p class="footer__copyright">Copyright 2021 Reda Elemawy</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lunar Robotics</title>
+    <link rel="icon" href="images/logo.jpg" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <div class="side-bar" id="sidebar">
+      <button class="close" onclick="closeSideBar()">&times;</button>
+      <ul class="list">
+        <li class="list_item list_item--active"><a>Product1</a></li>
+        <li class="list_item"><a>Product2</a></li>
+        <li class="list_item"><a>Product3</a></li>
+      </ul>
+    </div>
+    <button id="open" class="open" onclick="openSideBar()">
+      <svg class="icon icon--nav">
+        <use href="images/sprite.svg#menu"></use>
+      </svg>
+    </button>
+
+    <div class="dashboard" id="dashboard">
+      <nav class="nav collapsible">
+        <a aria-label="" class="nav__brand" href="index.html"
+          ><img src="images/logo.jpg" alt=""
+        /></a>
+        <svg class="icon icon--nav nav__toggler">
+          <use href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="/pricing.html">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="/dashboard.html">dashboard</a>
+          </li>
+          <li class="nav__item">
+            <a href="./about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="dashboard__header">
+          <div class="product">
+            <div class="card product__name" id="product__name">
+              Product1
+            </div>
+            <div class="card product__price">
+              <span class="plan__price">25 USD</span>
+              <span class="plan__billing-cycle">/day</span>
+            </div>
+          </div>
+        </div>
+        <h2 class="heading">
+          To Setup The Product Follow These Steps
+        </h2>
+        <div class="testimonial-container" id="testimonial-container"></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script></script>
+  </body>
+</html>
